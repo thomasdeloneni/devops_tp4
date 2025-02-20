@@ -20,6 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build Docker image
-      run: docker build . --file Dockerfile --tag demo-app:$(date +%s)
+      run: docker build . --file ./Dockerfile --tag demo-app:$(date +%s)
     - name: Start containers
       run: docker-compose up -d
